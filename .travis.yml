@@ -6,6 +6,8 @@ cache:
   - node_modules
 install:
 - npm install
+before_deploy:
+- gcloud  components update --version 330.0.0
 deploy:
   provider: gae
   project: cs3219-otot-task-b-gae
