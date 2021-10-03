@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- node
+cache:
+  directories:
+    - node_modules
+install:
+- npm install
+# deploy:
+#   provider: gae
+#   project: cs3219-otot-task-b-gae
+#   keyfile: client-secret.json
+#   verbosity: warning
+#   skip_cleanup: true
+#   on: master
