@@ -16,6 +16,7 @@ install:
 deploy:
 - provider: script
   script: ./script.sh
+  skip_cleanup: true
   on:
     branch: master
 before_deploy:
