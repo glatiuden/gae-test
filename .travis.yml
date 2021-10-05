@@ -15,7 +15,7 @@ install:
 - sudo apt-get update && sudo apt-get install -y google-cloud-sdk
 deploy:
 - provider: script
-  script: ./script.sh
+  script: bash script.sh
   skip_cleanup: true
   on:
     branch: master
